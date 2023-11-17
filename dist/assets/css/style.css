@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    right: 7%;
+    top: 5%;
+    z-index: 4;
+}
+
+.icon span {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    transition: all linear 0.3s !important;
+}
+
+.crossLine1 {
+    rotate: 55deg;
+}
+
+.crossLine2 {
+    rotate: 130deg;
+    bottom: 88%;
+}
+
+.view {
+    flex-direction: column;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background: #1E71FF;
+    transition: all linear 0.3s;
+    transform: translate(-50% -50%);
+    justify-content: center;
+}
+
+.end-0 {
+    right: 0;
+}
+
+@media (min-width:768px) {
+    .view {
+        flex-direction: row;
+        width: unset;
+        position: unset;
+        background-color: transparent;
+    }
+}
